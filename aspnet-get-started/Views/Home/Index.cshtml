@@ -8,6 +8,29 @@
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
+<form method="POST" action="/handler">
+    <h2 class="h3 mb-3 fw-normal">Turnstile &dash; Dummy Login Demo</h2>
+
+    <div class="form-floating">
+      <input type="text" id="user" class="form-control">
+      <label for="user">User name</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" id="pass" class="form-control" autocomplete="off" readonly value="CorrectHorseBatteryStaple">
+      <label for="pass">Password (dummy)</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <!-- The following line controls and configures the Turnstile widget. -->
+      <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
+      <!-- end. -->
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted"><a href="https://github.com/cloudflare/turnstile-demo-workers"><i class="bi bi-github"></i> See code</a></p>
+    <p class="mt-5 mb-3 text-muted">Go to the <a href="/explicit">explicit render demo</a></p>
+  </form>
+
+
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
@@ -18,6 +41,7 @@
         </p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
+    
     <div class="col-md-4">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
